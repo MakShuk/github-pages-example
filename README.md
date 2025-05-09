@@ -1,88 +1,97 @@
-# Демо React-приложение с GitHub Pages
+# React Demo App with GitHub Pages
 
-Это демонстрационное React-приложение с настроенным деплоем на GitHub Pages.
+<p align="right">
+  <a href="README.ru.md"><img src="https://img.shields.io/badge/Русский-red?style=for-the-badge&logo=github" alt="Русский"></a>
+</p>
 
-## Предварительные требования
+![License](https://img.shields.io/badge/license-MIT-blue)
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-blue?logo=tailwind-css)
 
-- Node.js (версия 14 или выше)
-- npm (устанавливается вместе с Node.js)
+A demonstration React application with configured deployment to GitHub Pages.
+
+## Prerequisites
+
+- Node.js (version 14 or higher)
+- npm (comes with Node.js)
 - Git
-- Аккаунт GitHub
+- GitHub account
 
-## Установка
+## Installation
 
-1. Клонируйте репозиторий:
+1. Clone the repository:
 ```bash
-git clone [URL вашего репозитория]
+git clone [your-repository-URL]
 cd catapi-react-demo
 ```
 
-2. Установите зависимости:
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-## Локальная разработка
+## Local Development
 
-Для запуска приложения локально:
+To run the application locally:
 ```bash
 npm run start:dev
 ```
 
-Приложение будет доступно по адресу [http://localhost:3000](http://localhost:3000)
+The application will be available at [http://localhost:3000](http://localhost:3000)
 
-## Деплой на GitHub Pages
+## Deploying to GitHub Pages
 
-1. В файле `package.json` добавьте или измените поле `homepage`:
+1. In your `package.json` file, add or modify the `homepage` field:
 ```json
 {
-  "homepage": "https://[ваш-username].github.io/[имя-репозитория]",
+  "homepage": "https://[your-username].github.io/[repository-name]",
   ...
 }
 ```
 
-2. Создайте новую ветку gh-pages (если её ещё нет):
+2. Create a new gh-pages branch (if it doesn't exist):
 ```bash
 git checkout -b gh-pages
 git push origin gh-pages
 ```
 
-3. Выполните деплой:
+3. Run deployment:
 ```bash
 npm run deploy
 ```
 
-Этот скрипт автоматически:
-- Соберёт проект (`npm run build`)
-- Отправит содержимое папки `build` в ветку `gh-pages`
-- Опубликует сайт по адресу, указанному в `homepage`
+This script will automatically:
+- Build the project (`npm run build`)
+- Push the contents of the `build` folder to the `gh-pages` branch
+- Publish the site at the URL specified in `homepage`
 
-## Настройка GitHub Pages
+## GitHub Pages Setup
 
-1. Перейдите в настройки вашего репозитория на GitHub (Settings)
-2. Найдите раздел "Pages"
-3. В разделе "Branch" выберите ветку "gh-pages"
-4. Нажмите "Save"
+1. Go to your repository settings on GitHub (Settings)
+2. Find the "Pages" section
+3. In the "Branch" section, select "gh-pages"
+4. Click "Save"
 
-После этого ваше приложение будет доступно по адресу:
-`https://[ваш-username].github.io/[имя-репозитория]`
+After this, your application will be available at:
+`https://[your-username].github.io/[repository-name]`
 
-## Структура проекта
+## Project Structure
 
-- `/src` - исходный код приложения
-- `/public` - статические файлы
-- `/build` - скомпилированная версия приложения (создаётся при сборке)
+- `/src` - application source code
+- `/public` - static files
+- `/build` - compiled version of the application (created during build)
 
-## Доступные скрипты
+## Available Scripts
 
-- `npm run start:dev` - запуск в режиме разработки
-- `npm run build` - сборка проекта
-- `npm run deploy` - деплой на GitHub Pages
-- `npm run lint` - проверка кода линтером
-- `npm run lint:fix` - автоисправление ошибок линтера
-- `npm run format` - форматирование кода
+- `npm run start:dev` - start development mode
+- `npm run build` - build the project
+- `npm run deploy` - deploy to GitHub Pages
+- `npm run lint` - check code with linter
+- `npm run lint:fix` - auto-fix linter errors
+- `npm run format` - format code
 
-## Технологии
+## Technologies
 
 - React 18
 - TypeScript
@@ -90,3 +99,7 @@ npm run deploy
 - Framer Motion
 - ESLint
 - Prettier
+
+## License
+
+This project is licensed under the MIT License.
